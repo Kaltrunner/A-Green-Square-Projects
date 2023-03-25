@@ -169,7 +169,7 @@ html {
     .square {
         height: 45vw;
         width: 45vw;
-        min-width: 100px;
+        min-width: 200px;
         margin: 10vw;
         position: absolute;
         border-radius: 2px;
