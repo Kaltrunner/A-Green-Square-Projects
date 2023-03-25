@@ -6,7 +6,7 @@ html {
     width: 14px;
   }
   body {
-    margin: 0 auto !important; 
+    font-family: Arial, Helvetica, sans-serif;
     scrollbar-width: thin;
     scrollbar-color: var(--thumbBG) var(--scrollbarBG);
   }
@@ -24,27 +24,40 @@ html {
     color: #121c26;
   }
   
-  html {
+  /* html {
     scroll-behavior: smooth;
     font-family: Helvetica;
+  } */
+
+  .marquee-div {
+    /* margin: 0 auto; */
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    text-align: center;
+    font-size: 9vw;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .marquee-div:after {
+    content: "";
+    display: inline-block;
+    
   }
   
-      .marquee {
-          justify-content: center;
-          align-items: center;
+      .marquee { 
           color: #121c26;
-          font-family: Arial, Helvetica, sans-serif;
           font-weight: bolder;
-          letter-spacing: -3.5vw;
-          margin: 0 auto;
-          white-space: nowrap;
-          overflow: hidden;
-          font-size: 30vw;
-          position: sticky;
+          letter-spacing: -1.5vw;
+          /* white-space: nowrap; */
+          /* overflow: hidden; */
+          /* font-size: 10vw; */
+          /* position: sticky; */
           cursor: default;
         }
         
-        .marquee span {
+        /* .marquee span {
           display: inline-block;
           padding-left: 2.5%;
           animation: marquee 160s linear infinite;
@@ -56,20 +69,20 @@ html {
           100% {
             transform: translate(-100%, 0);
           }
-        }
+        } */
   
   
         .section-noise {
           height: 45vw;
           width: 45vw;
           margin: 10vw;
-          border-radius: 8px;
+          border-radius: 2px;
           animation: change-white-noise 360s linear infinite;
           /* animation: change-white-noise 10800s linear infinite; */
           background: 
             url(https://media.tenor.com/cqm2X5OvcYIAAAAC/white-noise.gif);
             /* url(https://grainy-gradients.vercel.app/noise.svg);  */
-              filter: contrast(170%) brightness(1000%) blur(1px);
+              filter: contrast(170%) brightness(1000%);
               z-index: 1000;
         } 
   
@@ -85,54 +98,67 @@ html {
           0% {
             opacity: 0;
           }
+          5% {
+            opacity: 0;
+          }
           10% {
-            opacity: .1;
+            opacity: 0;
+          }
+          15% {
+            opacity: 0;
           }
           20% {
-            opacity: .2;
+            opacity: 0;
+          }
+          25% {
+            opacity: 0;
           }
           30% {
-            opacity: .3;
+            opacity: 0;
+          }
+          35% {
+            opacity: 0;
           }
           40% {
-            opacity: .4;
+            opacity: 0;
+          }
+          45% {
+            opacity: 0;
           }
           50% {
-            opacity: .5;
+            opacity: .1;
+          }
+          55% {
+            opacity: .1;
           }
           60% {
-            opacity: .6;
+            opacity: .2;
+          }
+          65% {
+            opacity: .2;
           }
           70% {
-            opacity: .7;
+            opacity: .3;
           }
           75% {
-            opacity: .8;
+            opacity: .3;
           }
           80% {
-            opacity: .9;
+            opacity: .4;
           }
           85% {
-            opacity: .7;
+            opacity: .4;
           }
           90% {
-            opacity: .5;
+            opacity: .3;
           }
           95% {
-            opacity: .3;
+            opacity: .1;
           }
           100% {
             opacity: 0;
           }
         }
-  
-        /* .isolate {
-          isolation: isolate;
-        } */
-  
-         /* .overlay {
-          mix-blend-mode: multiply;
-        } */
   
         .squareContainer {
           display: flex;
@@ -143,15 +169,18 @@ html {
     .square {
         height: 45vw;
         width: 45vw;
+        min-width: 100px;
         margin: 10vw;
         position: absolute;
-        border-radius: 8px;
-        box-shadow: 0px 0px 20px 1px #121c26;
+        border-radius: 2px;
+        box-shadow: 0 15px 15px 0px #d1d1d1;
         animation: change-square 360s linear infinite;
         /* animation: change-square 10800s linear infinite; */
         filter: blur(1px);
         z-index: 999;
           }
+
+
   
   @keyframes change-square {
       0% {
@@ -180,59 +209,59 @@ html {
       }
       30% {
           background: #00FF00;
-          opacity: 95%;
+          opacity: 100%;
       }
       35% {
           background: #50C878;
-          opacity: 90%;
+          opacity: 100%;
       }
       40% {
           background: #5F8575;
-          opacity: 85%;
+          opacity: 100%;
       }
       45% {
         background: #228B22;
-        opacity: 80%;
+        opacity: 100%;
       }
       50% {
           background: #00FF00;
-          opacity: 70%;
+          opacity: 100%;
       }
         55% {
             background: #355E3B;
-            opacity: 60%;
+            opacity: 95%;
         }
         60% {
             background: #2AAA8A;
-            opacity: 50%;
+            opacity: 90%;
         }
         65% {
             background: #90EE90;
-            opacity: 40%;
+            opacity: 85%;
         }
         70% {
           background: #478778;
-          opacity: 30%;
+          opacity: 80%;
         }
         75% {
             background: #98FB98;
-            opacity: 25%;
+            opacity: 75%;
         }
         80% {
             background: #C1E1C1;
-            opacity: 20%;
+            opacity: 70%;
         }
         85% {
-            background: #8A9A5B;
-            opacity: 15%;
+            background: #00FF00;
+            opacity: 65%;
         }
         90% {
-            background: #9FE2BF;
-            opacity: 10%;
+            background: #00FF00;
+            opacity: 60%;
         }
         95% {
           background: #00FF7F;
-          opacity: 10%;
+          opacity: 55%;
         }
         100% {
           background: #00FF00;
