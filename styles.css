@@ -1,8 +1,8 @@
-html {
+/* html {
     --scrollbarBG: whitesmoke;
     --thumbBG: #0FFF50;
-  }
-  body::-webkit-scrollbar {
+  } */
+  /* body::-webkit-scrollbar {
     width: 14px;
   }
   body {
@@ -17,23 +17,18 @@ html {
     background-color: var(--thumbBG) ;
     border-radius: 6px;
     border: 2.25px solid var(--scrollbarBG);
+  } */
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
   }
   
   ::selection {
     background-color: #0FFF50;
     color: #121c26;
   }
-  
-  /* html {
-    scroll-behavior: smooth;
-    font-family: Helvetica;
-  } */
 
   .marquee-div {
-    /* margin: 0 auto; */
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
     text-align: center;
     font-size: 9vw;
     overflow: hidden;
@@ -50,11 +45,11 @@ html {
           color: #121c26;
           font-weight: bolder;
           letter-spacing: -1.5vw;
+          cursor: default;
           /* white-space: nowrap; */
           /* overflow: hidden; */
           /* font-size: 10vw; */
           /* position: sticky; */
-          cursor: default;
         }
         
         /* .marquee span {
@@ -70,18 +65,36 @@ html {
             transform: translate(-100%, 0);
           }
         } */
+
+        .squareContainer {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        
+    .square {
+        height: 45vw;
+        width: 45vw;
+        min-width: 300px;
+        min-height: 300px;
+        margin-bottom: 10vw;
+        position: absolute;
+        animation: change-square 360s linear infinite;
+        /* animation: change-square 10800s linear infinite; */
+        filter: blur(1px);
+        z-index: 999;
+          }
   
   
         .section-noise {
           height: 45vw;
           width: 45vw;
-          margin: 10vw;
           border-radius: 2px;
+          margin-bottom: 10vw;
           animation: change-white-noise 360s linear infinite;
           /* animation: change-white-noise 10800s linear infinite; */
           background: 
             url(https://media.tenor.com/cqm2X5OvcYIAAAAC/white-noise.gif);
-            /* url(https://grainy-gradients.vercel.app/noise.svg);  */
               filter: contrast(170%) brightness(1000%);
               z-index: 1000;
         } 
@@ -89,9 +102,32 @@ html {
         .noise {
           height: 45vw;
           width: 45vw;
-          margin: 10vw;
           position: absolute;
           opacity: 0;
+        }
+
+        .aDiv {
+          height: 10vw;
+          display: flex;
+          justify-content: flex-end;
+          align-items: flex-end;
+        } 
+
+        footer {
+          margin: 1vw;
+        }
+
+        #portfolio-link {
+          color: #000;
+          text-decoration: none;
+          border-bottom: 1px solid #000;
+          transition: all .25s ease-in-out;
+        }
+        
+        #portfolio-link:hover {
+          color: #0FFF50;
+          transition: all .25s ease-in-out;
+          border-bottom: 1px solid #000;
         }
   
         @keyframes change-white-noise {
@@ -159,29 +195,6 @@ html {
             opacity: 0;
           }
         }
-  
-        .squareContainer {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-        
-    .square {
-        height: 45vw;
-        width: 45vw;
-        min-width: 300px;
-        min-height: 300px;
-        margin: 10vw;
-        position: absolute;
-        border-radius: 2px;
-        box-shadow: 0 15px 15px 0px #d1d1d1;
-        animation: change-square 360s linear infinite;
-        /* animation: change-square 10800s linear infinite; */
-        filter: blur(1px);
-        z-index: 999;
-          }
-
-
   
   @keyframes change-square {
       0% {
