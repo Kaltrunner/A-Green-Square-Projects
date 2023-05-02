@@ -30,16 +30,17 @@
 
   .marquee-div {
     text-align: center;
-    font-size: 9vw;
+    font-size: 9.25vw;
     overflow: hidden;
     width: 100%;
+    height: auto;
   }
-
+/* 
   .marquee-div:after {
     content: "";
     display: inline-block;
     
-  }
+  } */
   
       .marquee { 
           color: #121c26;
@@ -77,10 +78,13 @@
         width: 45vw;
         min-width: 300px;
         min-height: 300px;
+        border-radius: 2px;
+        margin-top: 5vw;
         margin-bottom: 10vw;
         position: absolute;
-        animation: change-square 360s linear infinite;
-        /* animation: change-square 10800s linear infinite; */
+        /* animation: change-square 240s linear infinite; */
+        animation: change-square 10800s linear infinite;
+        /* animation: change-square 30s linear infinite; */
         filter: blur(1px);
         z-index: 999;
           }
@@ -89,10 +93,14 @@
         .section-noise {
           height: 45vw;
           width: 45vw;
+          min-width: 300px;
+          min-height: 300px;
           border-radius: 2px;
+          margin-top: 5vw;
           margin-bottom: 10vw;
-          animation: change-white-noise 360s linear infinite;
-          /* animation: change-white-noise 10800s linear infinite; */
+          /* animation: change-white-noise 240s linear infinite; */
+          animation: change-white-noise 10800s linear infinite;
+          /* animation: change-white-noise 30s linear infinite; */
           background: 
             url(https://media.tenor.com/cqm2X5OvcYIAAAAC/white-noise.gif);
               filter: contrast(170%) brightness(1000%);
