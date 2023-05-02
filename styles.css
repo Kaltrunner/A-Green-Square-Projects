@@ -47,10 +47,21 @@
           font-weight: bolder;
           letter-spacing: -1.5vw;
           cursor: default;
+          animation: marquee 10800s linear infinite;
+          /* animation: marquee 30s linear infinite; */
           /* white-space: nowrap; */
           /* overflow: hidden; */
           /* font-size: 10vw; */
           /* position: sticky; */
+        }
+
+        @keyframes marquee {
+          0% {
+            opacity: 100;
+          }
+          100% {
+            opacity: 0;
+          }
         }
         
         /* .marquee span {
