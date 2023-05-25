@@ -145,14 +145,14 @@ html {
         #portfolio-link {
           color: #000;
           text-decoration: none;
-          border-bottom: 1px solid #000;
+          border-bottom: 2px solid #000;
           transition: all .25s ease-in-out;
         }
         
         #portfolio-link:hover {
           color: #0FFF50;
           transition: all .25s ease-in-out;
-          border-bottom: 1px solid #000;
+          border-bottom: 2px solid #fff;
         }
   
         @keyframes change-white-noise {
