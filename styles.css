@@ -1,25 +1,26 @@
 html {
-    --scrollbarBG: whitesmoke;
-    --thumbBG: lightgrey;
+    --scrollbarBG: #fff;
+    --thumbBG: #121c26;
   }
-  body:hover::-webkit-scrollbar-thumb {
-    background: #0FFF50;
-}
-  body::-webkit-scrollbar {
-    width: 13px;
-  }
+
   body {
     font-family: Arial, Helvetica, sans-serif;
-    scrollbar-width: thin;
     scrollbar-color: var(--thumbBG) var(--scrollbarBG);
   }
+
+  body::-webkit-scrollbar {
+    width: 11px;
+    /* display: none; */
+  }
+
   body::-webkit-scrollbar-track {
     background: var(--scrollbarBG);
   }
+
   body::-webkit-scrollbar-thumb {
     background-color: var(--thumbBG) ;
-    border-radius: 6px;
-    border: 2.25px solid var(--scrollbarBG);
+    border-radius: 2px;
+    border: 2px solid var(--scrollbarBG);
   }
 
   body {
@@ -27,8 +28,7 @@ html {
   }
   
   ::selection {
-    background-color: #0FFF50;
-    color: #121c26;
+    user-select: none;
   }
 
   .marquee-div {
@@ -49,9 +49,11 @@ html {
   
       .marquee { 
           color: #121c26;
-          font-weight: bolder;
-          letter-spacing: -1.5vw;
+          font-weight: 900;
+          letter-spacing: -1.45vw;
           cursor: default;
+          /* padding: 0;
+          margin: 0; */
           /* animation: marquee 10800s linear infinite; */
           /* animation: marquee 30s linear infinite; */
           /* white-space: nowrap; */
@@ -367,90 +369,3 @@ html {
             margin-top: 4rem;
           } 
       }
-  
-  
-          /* .lastPart {
-            width: 86rem;
-            height: 36rem;
-            margin: 0 auto;
-            background-color: #F8F9F9;
-            border: 1px solid #121c26;
-            border-radius: 6px;
-            display: flex;
-            align-content: space-around;
-            justify-content: space-evenly;
-            flex-wrap: wrap;
-            flex-direction: column;
-            line-height: 24px;
-          } */
-  
-          /* .about-green-square-div {
-            padding: 22px;
-          } */
-  
-          /* .about-green-sqr-text {
-            text-decoration: underline;
-            letter-spacing: -2px; 
-            cursor: default;
-          } */
-  
-          /* .about-text {
-            color: #F8F9F9;
-            cursor: default;
-            transition: all 4s ease-in-out;
-            padding: 4px;
-          }
-          .about-text:hover {
-            color: #121c26;
-            transition: all 1s ease-in-out;
-          } */
-  
-            
-  
-            /* .about {
-              color: #121c26;
-              font-size: 90px;
-              display: flex;
-              transition: all .5s ease;
-              padding: 10px;
-            }
-  
-            .about:hover {
-              cursor: pointer;
-              color: #0FFF50;
-              transition: all .5s ease;
-              font-style: italic;
-              text-decoration: underline;
-              background-color: #121c26;
-              border-radius: 4px;
-            } */
-  /* 
-            .aDiv {
-              width: 100%;
-              height: 5rem;
-              align-items: center;
-              position: absolute;
-            } */
-  
-          /* footer {
-            width: 100%;
-            position: absolute;
-            bottom: 60px;
-            font-size: 40px;
-            text-decoration: none;
-            display: flex;
-            height: min-content;
-            justify-content: space-around;
-          } */
-  
-          /* a {
-            text-decoration: none; 
-            color: #121c26;
-            transition: all .5s ease-in-out;
-          }
-          a:hover {
-            cursor: pointer; 
-            font-size: 60px;
-            transition: all .5s ease-in-out;
-          } */
-  
