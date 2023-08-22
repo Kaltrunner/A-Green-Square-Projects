@@ -14,7 +14,7 @@ body::-webkit-scrollbar {
 
 .marquee-div {
   text-align: center;
-  font-size: 9.25vw;
+  font-size: 12vw;
   width: 100%;
   height: auto;
   padding: 0;
@@ -109,7 +109,7 @@ footer {
             opacity: 0;
           }
           55% {
-            opacity: .1;
+            opacity: 0;
           }
           60% {
             opacity: .1;
@@ -121,19 +121,19 @@ footer {
             opacity: .3;
           }
           75% {
-            opacity: .4;
+            opacity: .3;
           }
           80% {
-            opacity: .5;
+            opacity: .2;
           }
           85% {
-            opacity: .4;
+            opacity: .2;
           }
           90% {
-            opacity: .5;
+            opacity: .1;
           }
           95% {
-            opacity: .3;
+            opacity: .1;
           }
           100% {
             opacity: 0;
