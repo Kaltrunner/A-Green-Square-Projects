@@ -46,24 +46,22 @@ body::-webkit-scrollbar {
   border-radius: 2px;
   margin-bottom: 10vw;
   position: absolute;
-  /* animation: change-square 240s linear infinite; */
   /* animation: change-square 10800s linear infinite; */
-  animation: change-square 60s linear infinite;
+  animation: change-square 180s linear infinite;
   filter: blur(1px);
   z-index: 999;
           }
   
   
 .section-noise {
-  height: 54.9vw;
-  width: 54.9vw;
+  height: 55vw;
+  width: 55vw;
   min-width: 300px;
   min-height: 300px;
   border-radius: 2px;
   margin-bottom: 10vw;
-  /* animation: change-white-noise 240s linear infinite; */
   /* animation: change-white-noise 10800s linear infinite; */
-  animation: change-white-noise 60s linear infinite;
+  animation: change-white-noise 180s linear infinite;
   background: 
     url(https://media.tenor.com/cqm2X5OvcYIAAAAC/white-noise.gif);
     filter: contrast(170%) brightness(1000%);
@@ -105,38 +103,29 @@ footer {
           0% {
             opacity: 0;
           }
-          50% {
-            opacity: 0;
-          }
-          55% {
-            opacity: 0;
-          }
-          60% {
-            opacity: .1;
-          }
           65% {
-            opacity: .2;
+            opacity: 0;
           }
           70% {
-            opacity: .3;
+            opacity: .05;
           }
           75% {
-            opacity: .3;
+            opacity: .05;
           }
           80% {
-            opacity: .2;
+            opacity: .05;
           }
           85% {
-            opacity: .2;
+            opacity: .05;
           }
           90% {
-            opacity: .1;
+            opacity: .05;
           }
           95% {
             opacity: .1;
           }
           100% {
-            opacity: 0;
+            opacity: .05;
           }
         }
   
