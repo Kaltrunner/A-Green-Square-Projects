@@ -30,6 +30,27 @@ body::-webkit-scrollbar {
   cursor: default;
   margin: 0;
   padding: 0;
+  animation: fade 180s linear;
+  }
+
+  @keyframes fade {
+    0% {
+      opacity: 0%;
+    }
+    10% {
+      opacity: 100%;
+      filter: blur(0);
+    }
+    20% {
+      opacity: 100%;
+    }
+    25% {
+      opacity: 0%;
+      filter: blur(4px);
+    }
+    100% {
+        opacity: 0%;
+    }
   }
 
 .squareContainer {
