@@ -18,7 +18,7 @@ body::-webkit-scrollbar {
   width: 100%;
   height: auto;
   padding: 0;
-  margin: 12vw auto;
+  margin: 9vw auto;
   display: flex;
   justify-content: center;
   }
@@ -65,7 +65,7 @@ body::-webkit-scrollbar {
   min-width: 300px;
   min-height: 300px;
   border-radius: 2px;
-  margin-bottom: 10vw;
+  margin-bottom: 20vw;
   position: absolute;
   /* animation: change-square 10800s linear infinite; */
   animation: change-square 180s linear infinite;
@@ -80,7 +80,7 @@ body::-webkit-scrollbar {
   min-width: 300px;
   min-height: 300px;
   border-radius: 2px;
-  margin-bottom: 10vw;
+  margin-bottom: 20vw;
   /* animation: change-white-noise 10800s linear infinite; */
   animation: change-white-noise 180s linear infinite;
   background: 
