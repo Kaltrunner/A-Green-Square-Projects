@@ -1,7 +1,11 @@
-body {
+.body-div {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
 body::-webkit-scrollbar {
@@ -14,13 +18,10 @@ body::-webkit-scrollbar {
 
 .marquee-div {
   text-align: center;
-  font-size: 12vw;
-  width: 100%;
-  height: auto;
+  font-size: 10vw;
   padding: 0;
-  margin: 9vw auto;
-  display: flex;
-  justify-content: center;
+  margin: 0 auto;
+  height: 10vw;
   }
   
 .marquee { 
@@ -60,12 +61,11 @@ body::-webkit-scrollbar {
   }
         
 .square {
-  height: 55vw;
-  width: 55vw;
+  width: 38vw;
+  height: 38vw;
   min-width: 300px;
   min-height: 300px;
   border-radius: 2px;
-  margin-bottom: 20vw;
   position: absolute;
   /* animation: change-square 10800s linear infinite; */
   animation: change-square 180s linear infinite;
@@ -75,12 +75,11 @@ body::-webkit-scrollbar {
   
   
 .section-noise {
-  height: 55vw;
-  width: 55vw;
+  width: 38vw;
+  height: 38vw;
   min-width: 300px;
   min-height: 300px;
   border-radius: 2px;
-  margin-bottom: 20vw;
   /* animation: change-white-noise 10800s linear infinite; */
   animation: change-white-noise 180s linear infinite;
   background: 
@@ -90,8 +89,8 @@ body::-webkit-scrollbar {
   } 
   
 .noise {
-  height: 55vw;
-  width: 55vw;
+  width: 38vw;
+  height: 38vw;
   position: absolute;
   opacity: 0;
   }
@@ -100,17 +99,20 @@ body::-webkit-scrollbar {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  align-items: flex-end;
+  animation: fade 180s linear infinite;
+  height: 5vw;
   } 
 
 footer {
-  margin: 2vw;
+  margin: 1vw;
   font-size: 1rem;
   }
 
 #portfolio-link {
   color: #000;
   text-decoration: none;
-  border-bottom: 2px solid #000;
+  border-bottom: 1px solid #000;
   transition: all .25s ease-in-out;
   }
         
@@ -128,25 +130,25 @@ footer {
             opacity: 0;
           }
           70% {
-            opacity: .05;
+            opacity: .025;
           }
           75% {
-            opacity: .05;
+            opacity: .025;
           }
           80% {
-            opacity: .05;
+            opacity: .025;
           }
           85% {
-            opacity: .05;
+            opacity: .025;
           }
           90% {
-            opacity: .05;
+            opacity: .025;
           }
           95% {
-            opacity: .1;
+            opacity: .25;
           }
           100% {
-            opacity: .05;
+            opacity: .025;
           }
         }
   
@@ -244,4 +246,7 @@ footer {
         justify-content: space-evenly;
         height: 100vh;
        }
+       footer {
+        font-size: .5rem;
+        }
       }
