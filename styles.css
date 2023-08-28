@@ -1,11 +1,11 @@
 .body-div {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   }
 
 body::-webkit-scrollbar {
@@ -16,48 +16,67 @@ body::-webkit-scrollbar {
   user-select: none;
   }
 
-.marquee-div {
+.header-div {
   text-align: center;
-  font-size: 10vw;
   padding: 0;
   margin: 0 auto;
-  height: 10vw;
+  animation: fade 180s linear infinite;
   }
   
-.marquee { 
+.header { 
   color: #121c26;
+  font-size: 10vw;
   font-weight: 900;
   letter-spacing: -1.45vw;
   cursor: default;
   margin: 0;
   padding: 0;
-  animation: fade 180s linear infinite;
+  }
+  
+.sub-text {
+  color: #121c26;
+  font-size: 1.25vw;
+  padding: 0;
+  margin: 0;
+  }
+  
+#portfolio-link {
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px solid #000;
+  transition: all .25s ease-in-out;
+  }
+          
+#portfolio-link:hover {
+  color: gray;
   }
 
-  @keyframes fade {
-    0% {
-      opacity: 0%;
+@keyframes fade {
+  0% {
+    opacity: 0%;
+    filter: blur(4px);
     }
-    10% {
-      opacity: 100%;
-      filter: blur(0);
+  10% {
+    opacity: 100%;
+    filter: blur(0);
     }
-    20% {
-      opacity: 100%;
+  20% {
+    opacity: 100%;
     }
-    25% {
-      opacity: 0%;
-      filter: blur(4px);
+  25% {
+    opacity: 0%;
+    filter: blur(2px);
     }
-    100% {
-        opacity: 0%;
+  100% {
+    opacity: 0%;
+    filter: blur(4px);
     }
   }
 
 .squareContainer {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-content: center;
   }
         
 .square {
@@ -65,6 +84,8 @@ body::-webkit-scrollbar {
   height: 38vw;
   min-width: 300px;
   min-height: 300px;
+  max-width: 1000px;
+  max-height: 1000px;
   border-radius: 2px;
   position: absolute;
   /* animation: change-square 10800s linear infinite; */
@@ -83,8 +104,8 @@ body::-webkit-scrollbar {
   /* animation: change-white-noise 10800s linear infinite; */
   animation: change-white-noise 180s linear infinite;
   background: 
-    url(https://media.tenor.com/cqm2X5OvcYIAAAAC/white-noise.gif);
-    filter: contrast(170%) brightness(1000%);
+  url(https://media.tenor.com/cqm2X5OvcYIAAAAC/white-noise.gif);
+  filter: contrast(170%) brightness(1000%);
   z-index: 1000;
   } 
   
@@ -94,159 +115,156 @@ body::-webkit-scrollbar {
   position: absolute;
   opacity: 0;
   }
-
-.aDiv {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  align-items: flex-end;
-  animation: fade 180s linear infinite;
-  height: 5vw;
-  } 
-
-footer {
-  margin: 1vw;
-  font-size: 1rem;
-  }
-
-#portfolio-link {
-  color: #000;
-  text-decoration: none;
-  border-bottom: 1px solid #000;
-  transition: all .25s ease-in-out;
-  }
-        
-#portfolio-link:hover {
-  color: #0FFF50;
-  transition: all .25s ease-in-out;
-  border-bottom: 2px solid #fff;
+  
+@keyframes change-white-noise {
+  0% {
+    opacity: 0;
+    }
+  65% {
+    opacity: 0;
+    }
+  70% {
+    opacity: .025;
+    }
+  75% {
+    opacity: .025;
+    }
+  80% {
+    opacity: .025;
+    }
+  85% {
+    opacity: .025;
+    filter: blur(1px);
+    }
+  90% {
+    opacity: .025;
+    filter: blur(2px);
+    }
+  95% {
+    opacity: .25;
+    filter: blur(3px);
+    }
+  100% {
+    opacity: .025;
+    filter: blur(4px);
+    }
   }
   
-        @keyframes change-white-noise {
-          0% {
-            opacity: 0;
-          }
-          65% {
-            opacity: 0;
-          }
-          70% {
-            opacity: .025;
-          }
-          75% {
-            opacity: .025;
-          }
-          80% {
-            opacity: .025;
-          }
-          85% {
-            opacity: .025;
-          }
-          90% {
-            opacity: .025;
-          }
-          95% {
-            opacity: .25;
-          }
-          100% {
-            opacity: .025;
-          }
-        }
-  
-  @keyframes change-square {
-      0% {
-        background: #0FFF50;
-        opacity: 0%;
-      }
-      5% {
-          background: #00FF00;
-          opacity: 50%;
-      }
-      10% {
-          background: #AAFF00;
-          opacity: 100%;
-      }
-      15% {
-          background: #50C878;
-          opacity: 100%;
-      }
-      20% {
-        background: #097969;
-        opacity: 100%;
-      }
-      25% {
-          background: #AFE1AF;
-          opacity: 100%;
-      }
-      30% {
-          background: #00FF00;
-          opacity: 100%;
-      }
-      35% {
-          background: #50C878;
-          opacity: 100%;
-      }
-      40% {
-          background: #5F8575;
-          opacity: 100%;
-      }
-      45% {
-        background: #228B22;
-        opacity: 100%;
-      }
-      50% {
-          background: #00FF00;
-          opacity: 100%;
-      }
-        55% {
-            background: #355E3B;
-            opacity: 100%;
-        }
-        60% {
-            background: #2AAA8A;
-            opacity: 100%;
-        }
-        65% {
-            background: #90EE90;
-            opacity: 100%;
-        }
-        70% {
-          background: #478778;
-          opacity: 95%;
-        }
-        75% {
-            background: #98FB98;
-            opacity: 90%;
-        }
-        80% {
-            background: #C1E1C1;
-            opacity: 80%;
-        }
-        85% {
-            background: #00FF00;
-            opacity: 70%;
-        }
-        90% {
-            background: #00FF00;
-            opacity: 60%;
-        }
-        95% {
-          background: #00FF7F;
-          opacity: 50%;
-        }
-        100% {
-          background: #00FF00;
-          opacity: 0%;
-        }
-      }
+@keyframes change-square {
+  0% {
+    background: #0FFF50;
+    opacity: 0%;
+    filter: blur(4px);
+    }
+  5% {
+    background: #00FF00;
+    opacity: 50%;
+    filter: blur(0);
+    }
+  10% {
+    background: #AAFF00;
+    opacity: 100%;
+    }
+  15% {
+    background: #50C878;
+    opacity: 100%;
+    }
+  20% {
+    background: #097969;
+    opacity: 100%;
+    }
+  25% {
+    background: #AFE1AF;
+    opacity: 100%;
+    }
+  30% {
+    background: #00FF00;
+    opacity: 100%;
+    }
+  35% {
+    background: #50C878;
+    opacity: 100%;
+    }
+  40% {
+    background: #5F8575;
+    opacity: 100%;
+    }
+  45% {
+    background: #228B22;
+    opacity: 100%;
+    }
+  50% {
+    background: #00FF00;
+    opacity: 100%;
+    }
+  55% {
+    background: #355E3B;
+    opacity: 100%;
+    }
+  60% {
+    background: #2AAA8A;
+    opacity: 100%;
+    }
+  65% {
+    background: #90EE90;
+    opacity: 100%;
+    }
+  70% {
+    background: #478778;
+    opacity: 95%;
+    }
+  75% {
+    background: #98FB98;
+    opacity: 90%;
+    }
+  80% {
+    background: #C1E1C1;
+    opacity: 80%;
+    }
+  85% {
+    background: #00FF00;
+    opacity: 70%;
+    }
+  90% {
+    background: #00FF00;
+    opacity: 60%;
+    filter: blur(0);
+    }
+  95% {
+    background: #00FF7F;
+    opacity: 50%;
+    filter: blur(2px);
+    }
+  100% {
+    background: #00FF00;
+    opacity: 0%;
+    filter: blur(4px);
+    }
+  }
 
-      @media only screen and (max-width: 820px) {
-       body {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        height: 100vh;
-       }
-       footer {
-        font-size: .5rem;
-        }
+  @media only screen and (min-width: 2000px) {
+    body {
+      flex-direction: column;
       }
+    .header-div {
+      display: none;
+    }
+  }
+
+@media only screen and (max-width: 820px) {
+  body {
+    display: flex;
+    flex-wrap: wrap;
+    }
+  .header-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+  .header {
+    font-size: 3rem;
+  }
+  .sub-text {
+    font-size: .75rem;
+    }
+  }
