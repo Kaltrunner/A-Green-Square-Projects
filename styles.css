@@ -248,9 +248,9 @@ body::-webkit-scrollbar {
     body {
       flex-direction: column;
       }
-    .header-div {
+    /* .header-div {
       display: none;
-    }
+    } */
   }
 
 @media only screen and (max-width: 820px) {
@@ -336,6 +336,8 @@ body::-webkit-scrollbar {
     z-index: 1;
     width: 4vw;
     height: 4vw;
+    min-width: 2.5rem;
+    min-height: 2rem;
     margin: 1vw;
     padding: .5rem;
     display: flex;
