@@ -44,7 +44,7 @@ body::-webkit-scrollbar {
 #portfolio-link {
   color: #000;
   text-decoration: none;
-  border-bottom: 2px solid #000;
+  border-bottom: 1px solid #000;
   transition: all .25s ease-in-out;
   }
           
@@ -253,22 +253,18 @@ body::-webkit-scrollbar {
     } */
   }
 
-@media only screen and (max-width: 820px) {
-  body {
-    display: flex;
-    flex-wrap: wrap;
-    }
+@media only screen and (max-width: 844px) {
   .header-div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     }
-  .header {
+  /* .header {
     font-size: 3rem;
   }
   .sub-text {
     font-size: .75rem;
-    }
+    } */
   }
 
 
