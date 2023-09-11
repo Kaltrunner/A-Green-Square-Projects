@@ -8,16 +8,30 @@
     <link rel="stylesheet" href="styles.css">
     <title>Green Square</title>
     <script>
-        function refreshPageWithMusic() {
-            const audio = document.getElementById("audio");
+        let isPlaying = false;
+
+        function refreshPage() {
             location.reload();
-            audio.play();
+        }
+
+        function toggleMusic() {
+            const audio = document.getElementById("audio");
+
+            if (isPlaying) {
+                audio.pause();
+            } else {
+                audio.play();
+            }
+
+            isPlaying = !isPlaying;
         }
     </script>
 </head>
 <body class="body-div">
     <div class="btn-div">
-        <button type="button" class="btn" onclick="refreshPageWithMusic()">CLK</button>
+        
+        <button type="button" class="btn-2" onclick="refreshPage()">RFS</button>
+        <button type="button" class="btn" onclick="toggleMusic()">PLY</button>
     </div>
     <audio id="audio" src="Kaltrunner . B-sides - $$$.wav">
         Your browser does not support the audio element.
@@ -44,7 +58,14 @@
                                 href="https://erikmrussell.com/"
                                 alt="">Erik Russell</a>
                         </li>
+                        
+                        <li></li>
                     </ul>
+                   
+                    <button type="button" class="btn-3" onclick="refreshPage()">RFS</button>
+                 
+                        <button type="button" class="btn-3" onclick="toggleMusic()">PLY</button>
+                  
                 </div>
             </div>
         </div>
