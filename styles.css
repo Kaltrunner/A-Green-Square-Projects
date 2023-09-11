@@ -203,13 +203,15 @@ body::-webkit-scrollbar {
 
   .btn-div {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    
     height: auto;
+    position: fixed;
+    top: 0;
+    left: 76vw;
   }
 
   .btn {
-    position: fixed;
+    /* position: fixed; */
     width: 8vw;
     min-width: 3rem;
     border-radius: 25rem;
@@ -219,9 +221,9 @@ body::-webkit-scrollbar {
     border: 1px solid #000;
     background-color: whitesmoke;
     color: #000;
-    top: 0;
+    /* top: 0; */
     padding: .5rem;
-    margin: 1rem 2rem;
+    margin: 1rem;
     transition: all .25s ease-in-out;
   }
 
@@ -236,7 +238,7 @@ body::-webkit-scrollbar {
   }
 
   .btn-2 {
-    position: fixed;
+    /* position: fixed; */
     width: 8vw;
     min-width: 3rem;
     border-radius: 25rem;
@@ -246,8 +248,8 @@ body::-webkit-scrollbar {
     border: 1px solid #000;
     background-color: whitesmoke;
     color: #000;
-    top: 0;
-    margin: 1rem 12rem;
+    /* top: 0; */
+    margin: 1rem;
     padding: .5rem;
     transition: all .25s ease-in-out;
   }
@@ -363,7 +365,7 @@ body::-webkit-scrollbar {
     content: "";
     position: absolute;
     z-index: 1;
-    top: -10px;
+    top: -1vw;
     width: 100%;
     height: 2px;
     background: inherit;
@@ -371,7 +373,7 @@ body::-webkit-scrollbar {
   }
 
   .menu-wrap .hamburger > div:after {
-    top: 10px;
+    top: 1vw;
     cursor: pointer !important;
   }
 
@@ -454,29 +456,21 @@ body::-webkit-scrollbar {
   transition: color .25s ease-in-out;
 }
 
-@media only screen and (max-width: 2600px) {
-  .btn-2 {
-    margin: 1rem 17rem;
+/* @media only screen and (max-width: 2600px) {
+  .menu-wrap .hamburger {
+    margin: 4rem;
   }
-}
-
-@media only screen and (max-width: 2500px) {
-  .btn-2 {
-    margin: 1rem 10rem;
-  }
-}
-
-@media only screen and (max-width: 912px) {
-  .btn-2 {
-    margin: 1rem 8rem;
-  }
-}
+} */
 
 @media only screen and (max-width: 480px) {
-  .btn-2 {
-    margin: 1rem 6rem;
-  }
   .menu-wrap .hamburger {
     margin: 1.25rem;
+  }
+  .menu-wrap .hamburger > div::before,
+  .menu-wrap .hamburger > div:after {
+    top: -10px;
+  }
+  .menu-wrap .hamburger > div:after {
+    top: 10px;
   }
 }
