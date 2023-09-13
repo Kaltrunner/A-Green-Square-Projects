@@ -201,17 +201,16 @@ body::-webkit-scrollbar {
 
   
 
-  .btn-div {
+  /* .btn-div {
     display: flex;
     
     height: auto;
     position: fixed;
     top: 0;
     left: 76vw;
-  }
+  } */
 
-  .btn {
-    /* position: fixed; */
+  /* .btn {
     width: 8vw;
     min-width: 3rem;
     border-radius: 25rem;
@@ -221,24 +220,22 @@ body::-webkit-scrollbar {
     border: 1px solid #000;
     background-color: whitesmoke;
     color: #000;
-    /* top: 0; */
     padding: .5rem;
     margin: 1rem;
     transition: all .25s ease-in-out;
-  }
+  } */
 
-  .btn:hover {
+  /* .btn:hover {
     background-color: #000;
     color: whitesmoke;
     cursor: pointer;
-  }
+  } */
 
-  .btn:active {
+  /* .btn:active {
     background-color: gray;
-  }
+  } */
 
-  .btn-2 {
-    /* position: fixed; */
+  /* .btn-2 {
     width: 8vw;
     min-width: 3rem;
     border-radius: 25rem;
@@ -248,27 +245,26 @@ body::-webkit-scrollbar {
     border: 1px solid #000;
     background-color: whitesmoke;
     color: #000;
-    /* top: 0; */
     margin: 1rem;
     padding: .5rem;
     transition: all .25s ease-in-out;
-  }
+  } */
 
-  .btn-2:hover {
+  /* .btn-2:hover {
     background-color: #000;
     color: whitesmoke;
     cursor: pointer;
-  }
+  } */
 
-  .btn-2:active {
+  /* .btn-2:active {
     background-color: gray;
-  }
+  } */
 
   .btn-3 {
-    width: 8vw;
+    width: auto;
     min-width: 3rem;
     border-radius: 25rem;
-    font-size: 1.5vw;
+    font-size: .75rem;
     font-weight: 200;
     border: none;
     border: 1px solid #000;
@@ -441,7 +437,7 @@ body::-webkit-scrollbar {
 .menu-wrap .menu > div > div> ul > li {
   list-style: none;
   color: #000;
-  font-size: 1.25vw;
+  font-size: .75rem;
   padding: .5rem;
 }
 
@@ -456,12 +452,6 @@ body::-webkit-scrollbar {
   transition: color .25s ease-in-out;
 }
 
-/* @media only screen and (max-width: 2600px) {
-  .menu-wrap .hamburger {
-    margin: 4rem;
-  }
-} */
-
 @media only screen and (max-width: 480px) {
   .menu-wrap .hamburger {
     margin: 1.25rem;
@@ -472,5 +462,8 @@ body::-webkit-scrollbar {
   }
   .menu-wrap .hamburger > div:after {
     top: 10px;
+  }
+  #green-header {
+    font-size: 2rem;
   }
 }

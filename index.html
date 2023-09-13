@@ -16,11 +16,14 @@
 
         function toggleMusic() {
             const audio = document.getElementById("audio");
+            const playButton = document.getElementById("play-button");
 
             if (isPlaying) {
                 audio.pause();
+                playButton.textContent = "Play Music";
             } else {
                 audio.play();
+                playButton.textContent = "Stop Music";
             }
 
             isPlaying = !isPlaying;
@@ -28,10 +31,6 @@
     </script>
 </head>
 <body class="body-div">
-    <!-- <div class="btn-div">
-        <button type="button" class="btn-2" onclick="toggleMusic()">PLY</button>
-        <button type="button" class="btn" onclick="refreshPage()">RFS</button> 
-    </div> -->
     <audio id="audio" src="Kaltrunner . B-sides - $$$.wav">
         Your browser does not support the audio element.
     </audio>
@@ -43,6 +42,9 @@
                 <div>
                     <ul>
                         <li id="green-header">GREEN SQUARE</li>
+                            <button type="button" class="btn-3" onclick="toggleMusic()" id="play-button">Play Music</button>
+                 
+                            <button type="button" class="btn-3" onclick="refreshPage()">Refresh Page</button>
                         <li>Designed and developed by 
                             <a 
                                 id="portfolio-link"
@@ -60,11 +62,9 @@
                         
                         <li></li>
                     </ul>
-                   
-                    <button type="button" class="btn-3" onclick="toggleMusic()">PLY</button>
+                    <!-- <button type="button" class="btn-3" onclick="toggleMusic()" id="play-button">Play Music</button>
                  
-                        <button type="button" class="btn-3" onclick="refreshPage()">RFS</button>
-                  
+                    <button type="button" class="btn-3" onclick="refreshPage()">Refresh Page</button> -->
                 </div>
             </div>
         </div>
