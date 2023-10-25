@@ -209,7 +209,7 @@
     background-color: transparent;
     color: #000;
     top: 0;
-    margin: 0 2vw;
+    margin: 2vw;
     padding: .5rem;
     transition: all .25s ease-in-out;
   }
@@ -381,12 +381,23 @@
   color: #000;
   font-size: .75rem;
   padding: .5rem;
-  margin: 2vw 0;
+}
+
+.menu-wrap .menu > div > div> ul {
+  padding: 0;
+  margin: 0;
 }
 
 #green-header {
   font-size: 4vw;
   letter-spacing: -.12em;
+  padding: 0;
+  margin: 0;
+}
+
+.green-p {
+  margin: 0;
+  padding: 0;
 }
 
 .menu-wrap .menu > div > div> ul > li > a {
