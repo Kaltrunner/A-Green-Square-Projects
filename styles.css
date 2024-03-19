@@ -42,6 +42,7 @@
   /* animation: change-square 10800s linear infinite; */
   animation: change-square 180s linear infinite;
   /* filter: blur(1px); */
+  z-index: 999;
           }
   
   
@@ -110,17 +111,16 @@
   0% {
     background: #4cbb17;
     opacity: 0%;
-    filter: blur(2px);
+    filter: blur(4px);
     }
   1% {
     background: #4cbb17;
-    opacity: 0%;
+    opacity: 100%;
     filter: blur(0);
     }
   4.44% {
     background: #9dc209;
     opacity: 100%;
-    filter: blur(0);
     }
   6.11% {
     background: #2a8000;
@@ -176,45 +176,35 @@
     }
   43.32% {
     background: #c7ea46;
-    /* opacity: 90%; */
     opacity: 100%;
     }
   45.54% {
     background: #85bb65;
-    /* opacity: 80%; */
     opacity: 100%;
     }
   46.65% {
     background: #4d8c57;
-    /* opacity: 70%; */
     opacity: 100%;
     }
   49.98% {
     background: #9dc209;
-    /* opacity: 60%; */
     opacity: 100%;
-    /* filter: blur(0); */
     }
   52.76% {
     background: #00a693;
-    /* opacity: 50%; */
     opacity: 100%;
-    filter: blur(0);
     }
   56.65% {
     background: #a4ff00;
     opacity: 100%;
-    filter: blur(4px);
     }
   58.32% {
       background: #4cbb17;
       opacity: 0%;
-      filter: blur(4px);
       }
   59.43% {
       background: #00a877;
       opacity: 100%;
-      filter: blur(0);
       }
   63.87% {
       background: #00b140;
@@ -267,7 +257,6 @@
   96.64% {
       background: #00a693;
       opacity: 100%;
-      filter: blur(0);
       }
   98% {
     background: #00f0a8;
@@ -276,13 +265,10 @@
   99% {
     background: whitesmoke;
     opacity: 100%;
-    filter: blur(2px);
   }
   100% {
-      
       background-color: whitesmoke;
-      opacity: 100%;
-      filter: blur(2px);
+      opacity: 0;
       }
   }
 
