@@ -9,8 +9,8 @@
 
   body {
     font-family: Arial, Helvetica, sans-serif;
-    height: 100vh;
-    width: 100vw;
+    /* height: 100vh; */
+    width: 100%;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -41,7 +41,7 @@
   position: absolute;
   /* animation: change-square 10800s linear infinite; */
   animation: change-square 180s linear infinite;
-  filter: blur(1px);
+  /* filter: blur(1px); */
           }
   
   
@@ -55,12 +55,12 @@
   border-radius: 2px;
   /* animation: change-white-noise 10800s linear infinite; */
   animation: change-white-noise 180s linear infinite;
-  background: 
+  /* background: 
   url(https://media.tenor.com/cqm2X5OvcYIAAAAC/white-noise.gif);
-  filter: contrast(170%) brightness(1000%);
-  z-index: 99;
+  filter: contrast(170%) brightness(1000%); */
+  /* z-index: 99; */
   } 
-  
+/*   
 .noise {
   width: 48vw;
   height: 48vw;
@@ -70,9 +70,9 @@
   max-height: 1000px;
   position: absolute;
   opacity: 0;
-  }
+  } */
   
-@keyframes change-white-noise {
+/* @keyframes change-white-noise {
   0% {
     opacity: 0;
     }
@@ -104,98 +104,186 @@
     opacity: .025;
     filter: blur(4px);
     }
-  }
+  } */
   
 @keyframes change-square {
   0% {
     background: #4cbb17;
     opacity: 0%;
-    filter: blur(4px);
+    filter: blur(2px);
     }
-  5% {
-    background: #98fb98;
-    opacity: 50%;
+  1% {
+    background: #4cbb17;
+    opacity: 0%;
     filter: blur(0);
     }
-  10% {
+  4.44% {
+    background: #9dc209;
+    opacity: 100%;
+    filter: blur(0);
+    }
+  6.11% {
     background: #2a8000;
     opacity: 100%;
     }
-  15% {
-    background: #c7ea46;
+  8.89% {
+    background: #00a877;
     opacity: 100%;
     }
-  20% {
-    background: #85bb65;
+  12.78% {
+    background: #568265;
     opacity: 100%;
     }
-  25% {
-    background: #4d8c57;
+  16.11% {
+    background: #67ea46;
     opacity: 100%;
     }
-  30% {
-    background: #9dc209;
-    opacity: 100%;
-    }
-  35% {
-    background: #00a693;
-    opacity: 100%;
-    }
-  40% {
+  18.33% {
     background: #4aff00;
     opacity: 100%;
     }
-  45% {
+  22.77% {
+    background: #00ab66;
+    opacity: 100%;
+    }
+  23.88% {
+    background: #9dc209;
+    opacity: 100%;
+    }
+  27.77% {
+    background: #00a693;
+    opacity: 100%;
+    }
+  29.99% {
+    background: #00a877;
+    opacity: 100%;
+    }
+  32.77% {
+    background: #00f0a8;
+    opacity: 100%;
+    }
+  33.88% {
     background: #4cbb17;
     opacity: 100%;
     }
-  50% {
-    background: #00a877;
+  37.21% {
+    background: #98fb98;
     opacity: 100%;
     }
-  55% {
-    background: #00b140;
-    opacity: 100%;
-    }
-  60% {
-    background: #00755e;
-    opacity: 100%;
-    }
-  65% {
-    background: #8a9a5b;
-    opacity: 100%;
-    }
-  70% {
-    background: #00a877;
+  38.88% {
+    background: #2a8000;
     opacity: 95%;
     }
-  75% {
-    background: #00f0a8;
-    opacity: 90%;
+  43.32% {
+    background: #c7ea46;
+    /* opacity: 90%; */
+    opacity: 100%;
     }
-  80% {
-    background: #00a877;
-    opacity: 80%;
-    }
-  85% {
-    background: #006b3c;
-    opacity: 70%;
-    }
-  90% {
+  45.54% {
     background: #85bb65;
-    opacity: 60%;
+    /* opacity: 80%; */
+    opacity: 100%;
+    }
+  46.65% {
+    background: #4d8c57;
+    /* opacity: 70%; */
+    opacity: 100%;
+    }
+  49.98% {
+    background: #9dc209;
+    /* opacity: 60%; */
+    opacity: 100%;
+    /* filter: blur(0); */
+    }
+  52.76% {
+    background: #00a693;
+    /* opacity: 50%; */
+    opacity: 100%;
     filter: blur(0);
     }
-  95% {
-    background: #4d8c57;
-    opacity: 50%;
-    filter: blur(2px);
-    }
-  100% {
-    background: #4cbb17;
-    opacity: 0%;
+  56.65% {
+    background: #a4ff00;
+    opacity: 100%;
     filter: blur(4px);
     }
+  58.32% {
+      background: #4cbb17;
+      opacity: 0%;
+      filter: blur(4px);
+      }
+  59.43% {
+      background: #00a877;
+      opacity: 100%;
+      filter: blur(0);
+      }
+  63.87% {
+      background: #00b140;
+      opacity: 100%;
+      }
+  66.09% {
+      background: #00755e;
+      opacity: 100%;
+      }
+  69.42% {
+      background: #8a9a5b;
+      opacity: 100%;
+      }
+  73.31% {
+      background: #00a877;
+      opacity: 100%;
+      }
+  76.09% {
+      background: #00f0a8;
+      opacity: 100%;
+      }
+  77.2% {
+      background: #00a817;
+      opacity: 100%;
+      }
+  81.64% {
+      background: #006b3c;
+      opacity: 100%;
+      }
+  83.31% {
+      background: #85bb65;
+      opacity: 100%;
+      }
+  86.64% {
+      background: #4d8c57;
+      opacity: 100%;
+      }
+  88.86% {
+      background: #c4bb17;
+      opacity: 100%;
+      }
+  89.97% {
+      background: #00a86b;
+      opacity: 100%;
+      }
+  92.75% {
+      background: #007848;
+      opacity: 100%;
+      }
+  96.64% {
+      background: #00a693;
+      opacity: 100%;
+      filter: blur(0);
+      }
+  98% {
+    background: #00f0a8;
+    opacity: 100%;
+  }
+  99% {
+    background: whitesmoke;
+    opacity: 100%;
+    filter: blur(2px);
+  }
+  100% {
+      
+      background-color: whitesmoke;
+      opacity: 100%;
+      filter: blur(2px);
+      }
   }
 
   .btn-3 {
@@ -368,10 +456,6 @@
 
 .menu-wrap .menu > div > div {
   text-align: center;
-  /* display: flex; */
-  /* justify-content: center; */
-  /* max-width: 100vw;
-  max-height: 100vh; */
   opacity: 0;
   transition: opacity 0.25s ease-in-out;
 }
